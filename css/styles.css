@@ -1,0 +1,156 @@
+/*цвет основного текста чорный #212121;*/
+/*вторичный цвет  #757575;*/
+/*акцент  голубой #2196F3;*/
+/*цвет фона background: #FFFFFF; */
+/* вторичный цвет фона background: #2F303A; */
+:root {
+--primary-text-color: #212121 ;
+--titl-text-color: #757575;
+--accent-color: #2196F3;
+--primare-wtite-color: #FFFFFF;
+--titl-wtite-color: #2F303A;
+}
+
+
+body {
+ background-color: var(--primare-wtite-color);
+ color: var(--primary-text-color);
+ font-family: Roboto, sans-serif;
+}
+.list {
+ list-style: none;
+}
+.logo { 
+    color: var(--titl-wtite-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.accent {
+  color: var(--accent-color);
+}
+/* site-nav list */
+.link{
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+ } 
+ .link-current {
+  color: var(--accent-color);
+  text-decoration: none;
+ }
+ .link:focus 
+ {
+  color: var(--accent-color)
+ }
+/* contakt list */
+.contakt-link {
+    color: var(--titl-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contakt-link:focus  { 
+  color: var(--accent-color);
+}
+.contakt-type {
+    color: var(--titl-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+} 
+.contakt-type:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+
+.section-title {
+    color: var(--primare-wtite-color);  
+    background: var(--titl-wtite-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+.button:active { 
+    font-family:'Roboto', sans-serif;
+    color: var(--primare-wtite-color);
+    
+}
+.button:active:hover,
+.button:active:focus {
+  background-color: var(--accent-color);
+}
+
+.benefits-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.desc {
+    color: var(--titl-text-color); 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;  
+}
+.subtitle-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-role {
+    color: var(--titl-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,19;
+    text-align: center;
+    letter-spacing: 0.03em;   
+}
+/* Футер */
+.info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+}
+.info-link {
+   color: var(--titl-wtite-color);
+   
+
+  /* color: rgba(255, 255, 255, 0.6); */
+}
