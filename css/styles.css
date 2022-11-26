@@ -5,71 +5,80 @@
 /* вторичный цвет фона background: #2F303A; */
 :root {
 --primary-text-color: #212121 ;
---titl-text-color: #757575;
+--title-text-color: #757575;
 --accent-color: #2196F3;
---primare-wtite-color: #FFFFFF;
---titl-wtite-color: #2F303A;
+--primary-white-color: #FFFFFF;
+--title-wtite-color: #2F303A;
 }
-
 
 body {
- background-color: var(--primare-wtite-color);
- color: var(--primary-text-color);
- font-family: Roboto, sans-serif;
+  color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family:'Roboto', sans-serif;
 }
+
+.body {
+  color: var(--primary-white-color);
+}
+
 .list {
- list-style: none;
+  list-style: none;
 }
+
 .logo { 
-    color: var(--titl-wtite-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  color: var(--title-wtite-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .accent {
   color: var(--accent-color);
 }
+
 /* site-nav list */
 .link{
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
- } 
- .link-current {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
+ } 
+
+ .link-current {
+   color: var(--accent-color);
+   text-decoration: none;
  }
+
  .link:focus 
  {
-  color: var(--accent-color)
+   color: var(--accent-color)
  }
+
 /* contakt list */
 .contakt-link {
-    color: var(--titl-text-color);
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contakt-link:focus  { 
   color: var(--accent-color);
 }
 .contakt-type {
-    color: var(--titl-text-color);
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14px;
-    letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
 } 
 .contakt-type:focus {
   color: var(--accent-color);
@@ -78,8 +87,8 @@ body {
 /* Герой */
 
 .section-title {
-    color: var(--primare-wtite-color);  
-    background: var(--titl-wtite-color);
+    color: var(--primary-white-color);  
+    background: var(--title-wtite-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -88,17 +97,30 @@ body {
     text-transform: uppercase;
 
 }
-.button:active { 
+.button { 
     font-family:'Roboto', sans-serif;
-    color: var(--primare-wtite-color);
-    
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+    cursor: pointer;  
 }
-.button:active:hover,
-.button:active:focus {
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
+.section {
+  background-color: var(--title-wtite-color);
+}
+
 .benefits-text {
+   color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -106,19 +128,24 @@ body {
     text-transform: uppercase;
 }
 .desc {
-    color: var(--titl-text-color); 
+    color: var(--title-text-color); 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;  
 }
 .subtitle-text {
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
+.team {
+    background: #F5F4FA;
+}
 .team-title {
+    color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -126,6 +153,7 @@ body {
     letter-spacing: 0.03em;
 }
 .team-name {
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -133,7 +161,7 @@ body {
     letter-spacing: 0.03em;
 }
 .team-role {
-    color: var(--titl-text-color);
+    color: var(--title-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1,19;
@@ -142,15 +170,42 @@ body {
 }
 /* Футер */
 .info {
+    color: var(--primary-white-color);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em; 
 }
-.info-link {
-   color: var(--titl-wtite-color);
-   
-
-  /* color: rgba(255, 255, 255, 0.6); */
+.studio {
+  color: var(--primary-white-color);
 }
+.info-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.address {
+  background-color: var(--title-wtite-color);
+}
+
+/* Портфоліо */
+
+/* Герой */
+.button-filter {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--accent-color);
+}
+
