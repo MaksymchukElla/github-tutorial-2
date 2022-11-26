@@ -87,7 +87,6 @@ body {
 /* Герой */
 
 .section-title {
-    color: var(--primary-white-color);  
     background: var(--title-wtite-color);
     font-weight: 900;
     font-size: 44px;
@@ -129,10 +128,13 @@ body {
 }
 .desc {
     color: var(--title-text-color); 
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
+    
+      
 }
 .subtitle-text {
     color: var(--primary-text-color);
@@ -149,7 +151,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    
     letter-spacing: 0.03em;
 }
 .team-name {
@@ -209,3 +211,17 @@ body {
   background-color: var(--accent-color);
 }
 
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.0;
+  letter-spacing: 0.06em
+}
+
+.project-link {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em; 
+}
