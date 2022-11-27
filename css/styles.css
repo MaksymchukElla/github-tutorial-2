@@ -92,7 +92,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
 }
 .button { 
   font-family:'Roboto', sans-serif;
@@ -198,11 +197,11 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.address {
+.part {
   background-color: var(--title-wtite-color);
 }
 
-.address {
+ .info{
   color: #FFFFFF;
 }
 /* Портфоліо */
