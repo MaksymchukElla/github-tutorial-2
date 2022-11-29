@@ -52,9 +52,9 @@ body {
   text-decoration: none;
  }
 
-.link:focus 
+.link:focus, 
 .link:hover {
-  color: var(--accent-color)
+  color: var(--accent-color);
  }
 
 /* contakt list */
@@ -82,7 +82,7 @@ body {
 } 
 .contakt-type:focus,
 .contakt-type:hover {
-  color: var(--accent-color);
+  color: var(--title-text-color);
 }
 
 /* Герой */
